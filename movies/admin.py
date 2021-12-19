@@ -9,7 +9,8 @@ class GenreAdmin(admin.ModelAdmin):
 
 
 class MovieAdmin(admin.ModelAdmin):
-    # list_display = ('id', 'name')
+    list_display = ('id', 'title', 'release_year',
+                    'number_in_stock', 'daily_rate', 'genre')
     print('hello ')
 
 
